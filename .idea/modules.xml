@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/2.1-topshiriq/2.1-topshiriq.iml" filepath="$PROJECT_DIR$/2.1-topshiriq/2.1-topshiriq.iml" />
+      <module fileurl="file://$PROJECT_DIR$/2.2-topshiriq/2.2-topshiriq.iml" filepath="$PROJECT_DIR$/2.2-topshiriq/2.2-topshiriq.iml" />
+      <module fileurl="file://$PROJECT_DIR$/2.3-topshiriq/2.3-topshiriq.iml" filepath="$PROJECT_DIR$/2.3-topshiriq/2.3-topshiriq.iml" />
+      <module fileurl="file://$PROJECT_DIR$/2.4-topshiriq/2.4-topshiriq.iml" filepath="$PROJECT_DIR$/2.4-topshiriq/2.4-topshiriq.iml" />
+      <module fileurl="file://$PROJECT_DIR$/2.5-topshiriq/2.5-topshiriq.iml" filepath="$PROJECT_DIR$/2.5-topshiriq/2.5-topshiriq.iml" />
+      <module fileurl="file://$PROJECT_DIR$/2.6-topshiriq/2.6-topshiriq.iml" filepath="$PROJECT_DIR$/2.6-topshiriq/2.6-topshiriq.iml" />
+      <module fileurl="file://$PROJECT_DIR$/2.7-topshiriq/2.7-topshiriq.iml" filepath="$PROJECT_DIR$/2.7-topshiriq/2.7-topshiriq.iml" />
+      <module fileurl="file://$PROJECT_DIR$/2.8-topshiriq/2.8-topshiriq.iml" filepath="$PROJECT_DIR$/2.8-topshiriq/2.8-topshiriq.iml" />
+      <module fileurl="file://$PROJECT_DIR$/3.1-topshiriq/3.1-topshiriq.iml" filepath="$PROJECT_DIR$/3.1-topshiriq/3.1-topshiriq.iml" />
+      <module fileurl="file://$PROJECT_DIR$/3.2-topshiriq/3.2-topshiriq.iml" filepath="$PROJECT_DIR$/3.2-topshiriq/3.2-topshiriq.iml" />
+      <module fileurl="file://$PROJECT_DIR$/3.3-topshiriq/3.3-topshiriq.iml" filepath="$PROJECT_DIR$/3.3-topshiriq/3.3-topshiriq.iml" />
+      <module fileurl="file://$PROJECT_DIR$/3.4-topshiriq/3.4-topshiriq.iml" filepath="$PROJECT_DIR$/3.4-topshiriq/3.4-topshiriq.iml" />
+      <module fileurl="file://$PROJECT_DIR$/3.5-topshiriq/3.5-topshiriq.iml" filepath="$PROJECT_DIR$/3.5-topshiriq/3.5-topshiriq.iml" />
+      <module fileurl="file://$PROJECT_DIR$/3.6-topshiriq/3.6-topshiriq.iml" filepath="$PROJECT_DIR$/3.6-topshiriq/3.6-topshiriq.iml" />
+      <module fileurl="file://$PROJECT_DIR$/3.7-topshiriq/3.7-topshiriq.iml" filepath="$PROJECT_DIR$/3.7-topshiriq/3.7-topshiriq.iml" />
+      <module fileurl="file://$PROJECT_DIR$/3.8-topshiriq/3.8-topshiriq.iml" filepath="$PROJECT_DIR$/3.8-topshiriq/3.8-topshiriq.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/OOP 1-smester final javoblari.iml" filepath="$PROJECT_DIR$/.idea/OOP 1-smester final javoblari.iml" />
+    </modules>
+  </component>
+</project>
