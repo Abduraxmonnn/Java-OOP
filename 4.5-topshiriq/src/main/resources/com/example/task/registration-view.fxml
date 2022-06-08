@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="498.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <HBox layoutX="34.0" layoutY="178.0" prefHeight="102.0" prefWidth="332.0">
+         <children>
+            <VBox prefHeight="97.0" prefWidth="523.0">
+               <children>
+                  <Label prefHeight="28.0" prefWidth="51.0" text="Your Username">
+                     <font>
+                        <Font name="System Bold" size="24.0" />
+                     </font>
+                  </Label>
+                  <TextField>
+                     <VBox.margin>
+                        <Insets top="10.0" />
+                     </VBox.margin>
+                  </TextField>
+               </children>
+            </VBox>
+         </children>
+      </HBox>
+      <HBox layoutX="34.0" layoutY="330.0" prefHeight="102.0" prefWidth="332.0">
+         <children>
+            <VBox prefHeight="97.0" prefWidth="523.0">
+               <children>
+                  <Label prefHeight="28.0" prefWidth="51.0" text="Confirm Password">
+                     <font>
+                        <Font name="System Bold" size="24.0" />
+                     </font>
+                  </Label>
+                  <TextField />
+                  <Button mnemonicParsing="false" prefHeight="60.0" prefWidth="275.0" style="-fx-background-color: green;" text="Register">
+                     <VBox.margin>
+                        <Insets top="10.0" />
+                     </VBox.margin>
+                  </Button>
+               </children>
+            </VBox>
+         </children>
+      </HBox>
+      <HBox layoutX="35.0" layoutY="258.0" prefHeight="102.0" prefWidth="332.0">
+         <children>
+            <VBox prefHeight="97.0" prefWidth="332.0">
+               <children>
+                  <Label prefHeight="28.0" prefWidth="51.0" text="Your Password">
+                     <font>
+                        <Font name="System Bold" size="24.0" />
+                     </font>
+                  </Label>
+                  <TextField />
+               </children>
+            </VBox>
+         </children>
+      </HBox>
+      <HBox layoutX="35.0" layoutY="98.0" prefHeight="102.0" prefWidth="332.0">
+         <children>
+            <VBox prefHeight="97.0" prefWidth="523.0">
+               <children>
+                  <Label prefHeight="28.0" prefWidth="51.0" text="Your Name">
+                     <font>
+                        <Font name="System Bold" size="24.0" />
+                     </font>
+                  </Label>
+                  <TextField>
+                     <VBox.margin>
+                        <Insets top="10.0" />
+                     </VBox.margin>
+                  </TextField>
+               </children>
+            </VBox>
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>

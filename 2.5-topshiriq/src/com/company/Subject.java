@@ -1,11 +1,11 @@
 package com.company;
 
 public class Subject {
-    private String subjectCode;
-    private String name;
-    private int totalHours;
-    private int credit;
-    private int semester;
+    public String subjectCode;
+    public String name;
+    public int totalHours;
+    public int credit;
+    public int semester;
 
     public Subject() {
 
@@ -56,12 +56,12 @@ public class Subject {
         this.credit = credit;
     }
 
-    public void  Show(){
-        System.out.println("---> Fan kodi: "+this.getSubjectCode());
-        System.out.println("---> Fan nomi: "+this.getName());
-        System.out.println("---> Umumiy soatlar soni: "+this.getTotalHours());
-        System.out.println("---> Fan kreditlar soni: "+this.getCredit());
-        System.out.println("---> Smester: "+this.getSemester());
+    public void Show() {
+        System.out.println("--> Subject code: " + this.getSubjectCode());
+        System.out.println("--> Subject name: " + this.getName());
+        System.out.println("--> Total hours: " + this.getTotalHours());
+        System.out.println("--> Subject credit quantity: " + this.getCredit());
+        System.out.println("--> Semester: " + this.getSemester());
         System.out.println("-------------------------------------------");
     }
 }

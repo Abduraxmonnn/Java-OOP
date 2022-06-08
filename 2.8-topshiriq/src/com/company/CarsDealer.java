@@ -4,12 +4,12 @@ import java.sql.Time;
 import java.util.ArrayList;
 
 public class CarsDealer {
-    String name;
-    String address;
-    Time closedTime;
-    String phone;
-    String[] operators;
-    ArrayList<Car> car=new ArrayList<>();
+    public String name;
+    public String address;
+    public Time closedTime;
+    public String phone;
+    public String[] operators;
+    public ArrayList<Car> car = new ArrayList<>();
 
     public CarsDealer() {
 
@@ -68,24 +68,25 @@ public class CarsDealer {
         this.car = car;
     }
 
-    public void Show(){
-        System.out.println("\n\t Avtosalon ma'lumotlari ");
-        System.out.println("---> Avtosalon nomi: "+this.getName());
-        System.out.println("---> Avtosalon addresi: "+this.getAddress());
-        System.out.println("---> Avtosalon yopilish vaqti: "+this.getClosedTime());
-        System.out.println("---> Avtosalon telefon raqami: "+this.getPhone());
+    public void Show() {
+        System.out.println("\n\t Dealership Information");
+        System.out.println("---> Dealership name: " + this.getName());
+        System.out.println("---> Dealership address: " + this.getAddress());
+        System.out.println("---> Dealership closed time: " + this.getClosedTime());
+        System.out.println("---> Dealership phone number: " + this.getPhone());
     }
 
     public void ShowOperators() {
-        if (operators.length!=0) {
-            System.out.println("---> Avtosalon operatorlari: ");
+        if (operators.length != 0) {
+            System.out.println("---> Dealership operators: ");
             for (int i = 0; i < operators.length; i++) {
-                System.out.println("\t"+(i + 1) + "--> " + operators[i]);
+                System.out.println("\t" + (i + 1) + "--> " + operators[i]);
             }
-        }else{
-            System.out.println("Ushbu avtosalonda operatorlar mavjud emas");
+        } else {
+            System.out.println("There are not operators in this Dealership ");
         }
     }
+
     public int getNumberOfOperators() {
         return this.operators.length;
     }

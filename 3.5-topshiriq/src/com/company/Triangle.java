@@ -1,6 +1,6 @@
 package com.company;
 
-public class Triangle extends Shape implements Drawable{
+public class Triangle extends Shape implements Drawable {
     private double SideA;
     private double SideB;
     private double SideC;
@@ -32,31 +32,33 @@ public class Triangle extends Shape implements Drawable{
     public void setSideC(double sideC) {
         SideC = sideC;
     }
+
     @Override
     public double perimeter() {
-        return (this.getSideA()+this.getSideB()+this.getSideC());
+        return (this.getSideA() + this.getSideB() + this.getSideC());
     }
+
     @Override
     public double area() {
-        double perimeter=(this.getSideA()+this.getSideB()+this.getSideC())/2;
-        return Math.sqrt(perimeter*(perimeter-this.getSideA())*(perimeter-this.getSideB())*(perimeter-this.getSideC()));
+        double perimeter = (this.getSideA() + this.getSideB() + this.getSideC()) / 2;
+        return Math.sqrt(perimeter * (perimeter - this.getSideA()) * (perimeter - this.getSideB()) * (perimeter - this.getSideC()));
     }
 
 
     @Override
     public void draw() {
-        if ((this.getSideA()+this.getSideB())>this.getSideC() && (this.getSideB()+this.getSideC())>this.getSideA() && (this.getSideA()+this.getSideC())>this.getSideB()){
-            System.out.println("-----> Shakl ma'lumotlari <-----");
-            System.out.println("----> Shakl rangi: "+this.getColor());
-            System.out.println("----> Shakl turi: "+this.getTypeShape());
-            System.out.println("----> Uchburchak ma'lumotlari <----");
-            System.out.println("----> Uchburchak 1-tomoni: "+this.getSideA());
-            System.out.println("----> Uchburchak 2-tomoni: "+this.getSideB());
-            System.out.println("----> Uchburchak 3-tomoni: "+this.getSideC());
-            System.out.println("----> Uchburchak perimetri: "+this.perimeter());
-            System.out.println("----> Uchburchak yuzi: "+this.area());
-        }else{
-            System.out.println("Uchburchak yasashning iloji bo'lmadi.Tomonlarni to'g'ri kiriting !!!");
+        if (this.SideA > 0 && this.SideC > 0 && this.SideB > 0) {
+            System.out.println("-----> Shape Information <-----");
+            System.out.println("----> Shape color: " + this.getColor());
+            System.out.println("----> Type of Shape: " + this.getTypeShape());
+            System.out.println("----> Triangle Information <----");
+            System.out.println("----> 1st side of the Triangle: " + this.getSideA());
+            System.out.println("----> 2nd side of the Triangle: " + this.getSideB());
+            System.out.println("----> 3rd side of the Triangle: " + this.getSideC());
+            System.out.println("----> Triangle Perimeter: " + this.perimeter());
+            System.out.println("----> Triangle Face: " + this.area());
+        } else {
+            System.out.println("It was not possible to make a triangle. Enter the sides correctly !!!");
         }
     }
 }

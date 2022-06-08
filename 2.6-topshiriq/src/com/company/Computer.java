@@ -1,12 +1,12 @@
 package com.company;
 
 public class Computer {
-    int id;
-    String name;
-    String company;
-    int year;
-    double price;
-    MotherBoard mb=new MotherBoard();
+    public int id;
+    public String name;
+    public String company;
+    public int year;
+    public double price;
+    public MotherBoard mb = new MotherBoard();
 
     public Computer() {
 
@@ -71,21 +71,15 @@ public class Computer {
      }
     public void Show(){
         if (checkMotherBoard()){
-            System.out.println("-------- Kompyuter ma'lumotlari ----------");
-            System.out.println("---> Kompyuter idsi: "+this.getId());
-            System.out.println("---> Kompyuter nomi: "+this.getName());
-            System.out.println("---> Kompyuter kompaniyasi: "+this.getCompany());
-            System.out.println("---> Kompyuter yili: "+this.getYear());
-            System.out.println("---> Kompyuter narxi: "+this.getPrice());
+            System.out.println("-------- Computer Information ----------");
+            System.out.println("---> Computer ID: "+this.getId());
+            System.out.println("---> Computer name: "+this.getName());
+            System.out.println("---> Computer company: "+this.getCompany());
+            System.out.println("---> Computer issue year: "+this.getYear());
+            System.out.println("---> Computer price: "+this.getPrice());
             this.mb.Show();
         }else{
-            System.out.println("-------- Kompyuter ma'lumotlari ----------");
-            System.out.println("---> Kompyuter idsi: "+this.getId());
-            System.out.println("---> Kompyuter nomi: "+this.getName());
-            System.out.println("---> Kompyuter kompaniyasi: "+this.getCompany());
-            System.out.println("---> Kompyuter yili: "+this.getYear());
-            System.out.println("---> Kompyuter narxi: "+this.getPrice());
-            System.out.println("---> Ushbu kompyuterda plat mavjud emas !!!");
+            System.out.println("---> Not Found MotherBoard !!!");
         }
     }
 }

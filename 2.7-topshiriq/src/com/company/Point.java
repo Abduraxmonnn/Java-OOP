@@ -1,9 +1,9 @@
 package com.company;
 
 public class Point {
-    private double coordinateX;
-    private double coordinateY;
-    private String color;
+    public double coordinateX;
+    public double coordinateY;
+    public String color;
 
     public Point() {
 
@@ -37,9 +37,10 @@ public class Point {
     public void setColor(String color) {
         this.color = color;
     }
+
     public void Show() {
-        System.out.println("---> X kordinatasi: "+this.getCoordinateX());
-        System.out.println("---> Y kordinatasi: "+this.getCoordinateY());
-        System.out.println("---> Rangi: "+this.getColor());
+        System.out.println("--> X Coordinate: " + this.getCoordinateX());
+        System.out.println("--> Y Coordinate: " + this.getCoordinateY());
+        System.out.println("--> Color: " + this.getColor());
     }
 }

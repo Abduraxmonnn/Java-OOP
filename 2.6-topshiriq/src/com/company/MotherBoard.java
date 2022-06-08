@@ -1,13 +1,13 @@
 package com.company;
 
 public class MotherBoard {
-    String serialCode;
-    String name;
-    String company;
-    int year;
-    double cpu;
-    int ram;
-    int hdd;
+    public String serialCode;
+    public String name;
+    public String company;
+    public int year;
+    public double cpu;
+    public int ram;
+    public int hdd;
 
     public MotherBoard() {
 
@@ -73,14 +73,15 @@ public class MotherBoard {
     public void setHdd(int hdd) {
         this.hdd = hdd;
     }
-    public void Show(){
-        System.out.println("\n\t Onaplata ma'lumotlari ");
-        System.out.println("---> Seriya kodi: "+this.getSerialCode());
-        System.out.println("---> Nomi: "+this.getName());
-        System.out.println("---> Kompaniyasi: "+this.getCompany());
-        System.out.println("---> Ishlab chiqarilgan yili: "+this.getYear());
-        System.out.println("---> Cpu: "+this.getCpu());
-        System.out.println("---> Ram: "+this.getRam());
-        System.out.println("---> Hdd: "+this.getHdd());
+
+    public void Show() {
+        System.out.println("\n\t MotherBoard information ");
+        System.out.println("--> Serial code: " + this.getSerialCode());
+        System.out.println("--> Name: " + this.getName());
+        System.out.println("--> Company: " + this.getCompany());
+        System.out.println("--> Year of issue: " + this.getYear());
+        System.out.println("--> CPU: " + this.getCpu());
+        System.out.println("--> RAM: " + this.getRam());
+        System.out.println("--> HDD: " + this.getHdd());
     }
 }

@@ -4,11 +4,11 @@ import java.util.ArrayList;
 import java.util.Date;
 
 public class Teacher {
-    private String fname;
-    private String lname;
-    private Date birthday;
-    private String department;
-    ArrayList<Subject> subject=new ArrayList<>();
+    public String fname;
+    public String lname;
+    public Date birthday;
+    public String department;
+    ArrayList<Subject> subject = new ArrayList<>();
 
     public String getFname() {
         return fname;
@@ -50,29 +50,30 @@ public class Teacher {
         this.subject = subject;
     }
 
-    public void Show(){
-        System.out.println("\n\t------> O'qituvchi ma'lumotlari <------");
-        System.out.println("---> O'qituvchi ismi: "+this.getFname());
-        System.out.println("---> O'qituvchi familyasi: "+this.getLname());
-        System.out.println("---> O'qituvchi tug'ulgan sanasi: "+this.getBirthday());
-        System.out.println("---> O'qituvchi departamenti: "+this.getDepartment());
-        System.out.println("---> O'qituvchiga biriktirilgan fanlar: ");
+    public void Show() {
+        System.out.println("\n\t------> Teacher information <------");
+        System.out.println("---> Teacher firstname: " + this.getFname());
+        System.out.println("---> Teacher lastname: " + this.getLname());
+        System.out.println("---> Teacher birthday: " + this.getBirthday());
+        System.out.println("---> Teacher's department: " + this.getDepartment());
+        System.out.println("---> Teacher's subjects: ");
     }
 
-    public boolean checkSubject(){
+    public boolean checkSubject() {
         return subject.size() != 0;
     }
 
     public void ShowSubject() {
-        if (checkSubject()){
+        if (checkSubject()) {
             for (Subject subjects : subject) {
                 subjects.Show();
             }
-        }else{
-            System.out.println("\tUshbu o'qituvchida fan mavjud emas");
+        } else {
+            System.out.println("\tThere are not subjects for this teacher");
         }
     }
-    public int  getNumberOfSubjects() {
+
+    public int getNumberOfSubjects() {
         if (checkSubject()) {
             return subject.size();
         }

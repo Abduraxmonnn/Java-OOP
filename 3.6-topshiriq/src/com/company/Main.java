@@ -4,16 +4,16 @@ public class Main {
 
     public static void main(String[] args) {
 
-        Car car=new Car();
-        car.setColor("dsfdsf");
-        car.setCompany("dsffdsfsd");
-        car.setFuelType(57);
-        car.setModel("sdfds");
+        Car car = new Car();
+        car.setColor("Yellow");
+        car.setCompany("Volkswagen");
+        car.setFuelType(100);
+        car.setModel("Modern");
         car.setConsumption(1.5);
-        car.setPrice(135000000);
+        car.setPrice(1350000);
         car.Show();
         car.start();
-        System.out.println("----> Avtomobil tezligi: "+car.checkSpeed());
+        System.out.println("----> The car speed: " + car.checkSpeed());
         car.stop();
     }
 }

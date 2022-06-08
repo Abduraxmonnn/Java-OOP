@@ -2,7 +2,7 @@ package com.company;
 
 import java.util.Random;
 
-public class Airplane extends Transport implements Vehicle{
+public class Airplane extends Transport implements Vehicle {
     private String model;
     private int passengers;
     private String type;
@@ -37,33 +37,33 @@ public class Airplane extends Transport implements Vehicle{
 
     @Override
     public void start() {
-        System.out.println("----> Samalyot harakatga tushdi !!!");
+        System.out.println("----> Airplane started !!!");
     }
 
     @Override
     public void stop() {
-        System.out.println("----> Samalyot qo'ndi !!!");
+        System.out.println("----> Airplane stopped !!!");
     }
 
     @Override
     public void Show() {
-        System.out.println("----> Samalyot ma'lumotlari <----");
-        System.out.println("----> Color: "+this.getColor());
-        System.out.println("----> Company: "+this.getCompany());
-        System.out.println("----> Fuel type: "+this.getFuelType());
-        System.out.println("----> Model: "+this.getModel());
-        System.out.println("----> Passengers: "+this.getPassengers());
-        System.out.println("----> Type: "+this.getType());
+        System.out.println("----> Airplane Information <----");
+        System.out.println("----> Airplane Color: " + this.getColor());
+        System.out.println("----> Airplane Company: " + this.getCompany());
+        System.out.println("----> Airplane Fuel type: " + this.getFuelType());
+        System.out.println("----> Airplane Model: " + this.getModel());
+        System.out.println("----> Airplane Passengers: " + this.getPassengers());
+        System.out.println("----> Airplane Type: " + this.getType());
     }
 
     @Override
     public void takeoff() {
-        System.out.println("----> Samalyot uchdi !!!");
+        System.out.println("----> Airplane flown !!!");
     }
 
     @Override
     public int checkSpeed() {
         Random random = new Random();
-        return random.nextInt(+250)+450;
+        return random.nextInt(+250) + 450;
     }
 }

@@ -37,23 +37,23 @@ public class Bus extends Transport implements Vehicle{
 
     @Override
     public void start() {
-        System.out.println("----> Avtobus harakatga tushirildi !!!");
+        System.out.println("----> The bus started !!!");
     }
 
     @Override
     public void stop() {
-        System.out.println("----> Avtobus to'xtadi !!!");
+        System.out.println("----> The bus stop !!!");
     }
 
     @Override
     public void Show() {
-        System.out.println("----> Avtobus ma'lumotlari <----");
-        System.out.println("----> Color:"+this.getColor());
-        System.out.println("----> Company: "+this.getCompany());
-        System.out.println("----> fuel type: "+this.getFuelType());
-        System.out.println("----> Model: "+this.getModel());
-        System.out.println("----> price: "+this.getPrice());
-        System.out.println("----> consumption: "+this.getConsumption());
+        System.out.println("----> Bus Information <----");
+        System.out.println("----> Bus Color:"+this.getColor());
+        System.out.println("----> Bus Company: "+this.getCompany());
+        System.out.println("----> Bus fuel type: "+this.getFuelType());
+        System.out.println("----> Bus Model: "+this.getModel());
+        System.out.println("----> Bus price: "+this.getPrice());
+        System.out.println("----> Bus consumption: "+this.getConsumption());
     }
 
     @Override

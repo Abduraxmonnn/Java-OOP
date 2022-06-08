@@ -1,41 +1,42 @@
 package com.company;
 
+import java.util.Calendar;
 import java.util.Date;
 
 public class Main {
 
     public static void main(String[] args) {
-        Subject OOP = new Subject("fdgdf","fdgfd");
-        OOP.setTotalHours(12);
-        OOP.setCredit(3);
+        Subject OOP = new Subject("qwerty","OOP");
+        OOP.setTotalHours(42);
+        OOP.setCredit(4);
         OOP.setSemester(2);;
 
-        Subject WEB = new Subject("gdfgdf","fdgdfg dfgfd");
-        WEB.setTotalHours(15);
-        WEB.setCredit(3);
-        WEB.setSemester(4);
+        Subject MATH = new Subject("gdfgdf","Mathematics");
+        MATH.setTotalHours(45);
+        MATH.setCredit(4);
+        MATH.setSemester(2);
         
         Teacher teacher = new Teacher();
-        teacher.setFname("fdgdf");
-        teacher.setLname("dfgfd'dfgdf");
-        Date sana=new Date(1980,12,12);
-        teacher.setBirthday(sana);
-        teacher.setDepartment("fdgfdg fdgdfg fdgdfg");
+        teacher.setFname("Bob");
+        teacher.setLname("Richard");
+        Date data = new Date(1990, Calendar.JULY,6);
+        teacher.setBirthday(data);
+        teacher.setDepartment("Teacher Department");
         teacher.subject.add(OOP);
-        teacher.subject.add(WEB);
+        teacher.subject.add(MATH);
         teacher.Show();
         teacher.ShowSubject();
-        System.out.println("----> O'qituvchiga biriktirilgan fanlar soni: " + teacher.getNumberOfSubjects());
+        System.out.println("----> Teacher's subjects quantity: " + teacher.getNumberOfSubjects());
 
         Teacher teacher1 = new Teacher();
-        teacher1.setFname("Temurbek");
-        teacher1.setLname("Qo'chqorov");
-        Date sana1=new Date(1980,12,12);
-        teacher1.setBirthday(sana1);
-        teacher1.setDepartment("Informationn system engineering");
+        teacher1.setFname("Michel");
+        teacher1.setLname("Hopkins");
+        Date data1 = new Date(1970, Calendar.MARCH,18);
+        teacher1.setBirthday(data1);
+        teacher1.setDepartment("Teacher 1 Department");
         teacher1.Show();
         teacher1.ShowSubject();
-        System.out.println("----> O'qituvchiga biriktirilgan fanlar soni: " + teacher.getNumberOfSubjects());
+        System.out.println("----> Teacher's subjects quantity: " + teacher.getNumberOfSubjects());
 
     }
 }

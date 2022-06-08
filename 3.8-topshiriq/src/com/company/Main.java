@@ -3,18 +3,17 @@ package com.company;
 public class Main {
 
     public static void main(String[] args) {
-
-        Airplane  airplane = new Airplane();
-        airplane.setColor("dsfdsf");
-        airplane.setCompany("sdfsd");
-        airplane.setFuelType(217);
-        airplane.setModel("fsdfsd sdfsd");
+        Airplane airplane = new Airplane();
+        airplane.setColor("White");
+        airplane.setCompany("American Air-lance");
+        airplane.setFuelType(200);
+        airplane.setModel("Boeing 787-800");
         airplane.setPassengers(320);
-        airplane.setType("Yo'sdfdsf sdfsd");
+        airplane.setType("Public");
         airplane.Show();
         airplane.start();
         airplane.takeoff();
-        System.out.println("----> Samalyot tezligi: "+airplane.checkSpeed());
+        System.out.println("----> Airplane speed: " + airplane.checkSpeed());
         airplane.stop();
     }
 }

@@ -1,8 +1,8 @@
 package com.company;
 
 public class Circle {
-    private double radius;
-    private String color;
+    public double radius;
+    public String color;
     Point point;
 
     public Circle() {
@@ -37,36 +37,34 @@ public class Circle {
         this.point = point;
     }
 
-    public boolean CheckPoint(){
-        boolean check=false;
-        if (point.getColor()!=null && this.point.getCoordinateY()!=0 &&this.point.getCoordinateX()!=0){
-            check=true;
-        }
-        return check;
+    public boolean CheckPoint() {
+        return point.getColor() != null && this.point.getCoordinateY() != 0 && this.point.getCoordinateX() != 0;
     }
-    public boolean draw(){
+
+    public boolean draw() {
         boolean check = false;
         if (CheckPoint()) {
             if (this.getRadius() > 0) {
                 check = true;
             }
         }
-            return check;
+        return check;
     }
-    public void Show(){
+
+    public void Show() {
         if (CheckPoint()) {
-            System.out.println("\n\t------ Aylana ma'lumotlari -------");
-            System.out.println("---> Aylana radiusi: " + this.getRadius());
-            System.out.println("---> Aylana rangi: " + this.getColor());
-            System.out.println("\n\t Aylana markazi ma'lumotlari: ");
+            System.out.println("\n\t------ Circle Information -------");
+            System.out.println("---> Circle radius: " + this.getRadius());
+            System.out.println("---> Circle color: " + this.getColor());
+            System.out.println("\n\t Circle center information: ");
             this.point.Show();
-            if (draw()){
-                System.out.println("\n\t ---- Aylana chizildi !!! ----");
-            }else{
-                System.out.println("\n\t ---- Aylana chizilmadi !!! ----");
+            if (draw()) {
+                System.out.println("\n\t ---- The Circle drawn !!! ----");
+            } else {
+                System.out.println("\n\t ---- The Circle was not drawn !!! ----");
             }
-        }else{
-            System.out.println("---- Aylana chizish uchun tekislikdagi nuqtani belgilang!!! ----");
+        } else {
+            System.out.println("---- Mark a point on the plane to draw a circle !!! ----");
         }
     }
 }

@@ -1,12 +1,12 @@
 package com.company;
 
 public class Car {
-    String model;
-    String company;
-    double price;
-    String color;
-    int speed;
-    String agreementNumber;
+    public String model;
+    public String company;
+    public double price;
+    public String color;
+    public int speed;
+    public String agreementNumber;
 
     public Car() {
 
@@ -65,13 +65,13 @@ public class Car {
         this.agreementNumber = agreementNumber;
     }
 
-    public void Show(){
-        System.out.println("----- Avtomobil ma'lumotlari -----");
-        System.out.println("---> Avtomobil modeli: "+this.getModel());
-        System.out.println("---> Avtomobil kompaniyasi: "+this.getCompany());
-        System.out.println("---> Avtomobil narxi: "+this.getPrice()+"$");
-        System.out.println("---> Avtomobil  rangi: "+this.getColor());
-        System.out.println("---> Avtomobil tezligi: "+this.getSpeed());
-        System.out.println("---> Avtomobil shartnoma raqami: "+this.getAgreementNumber());
+    public void Show() {
+        System.out.println("----- Car Information -----");
+        System.out.println("---> Car model: " + this.getModel());
+        System.out.println("---> Car company: " + this.getCompany());
+        System.out.println("---> Car cost: " + this.getPrice() + "$");
+        System.out.println("---> Car color: " + this.getColor());
+        System.out.println("---> Car speed: " + this.getSpeed());
+        System.out.println("---> Car agreement number: " + this.getAgreementNumber());
     }
 }
